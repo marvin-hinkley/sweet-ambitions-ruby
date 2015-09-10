@@ -4,15 +4,15 @@
 var app = angular.module('app', [
     'ui.router',
     'templates',
-    'info'
-])
+    'app.info'
+]);
 app.config(['$stateProvider', '$httpProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $httpProvider, $urlRouterProvider, $locationProvider){
     $locationProvider.html5Mode(true);
     $urlRouterProvider.otherwise('/');
     $stateProvider.
         state('home', {
             url: '/',
-            templateUrl: 'views/home.html',
-            controller: 'app.controller',
+            templateUrl: 'home.html',
+            controller: 'app.controller'
         });
 }]);
