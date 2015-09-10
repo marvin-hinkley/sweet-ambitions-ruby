@@ -12,7 +12,7 @@ app.config(['$stateProvider', '$httpProvider', '$urlRouterProvider', '$locationP
     $stateProvider.
         state('home', {
             url: '/',
-            templateUrl: 'home.html',
+            templateUrl: '/assets/home.html',
             controller: 'app.controller'
         });
 }]);

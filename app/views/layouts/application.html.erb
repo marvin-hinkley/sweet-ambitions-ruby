@@ -4,12 +4,22 @@
   <base href="/">
   <title>SweetAmbitions</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body ng-app="app" ng-controller="app.controller">
-
+<h2>Sweet Ambitions</h2>
+<nav>
+  <ul>
+    <li><a ui-sref="home">home</a></li>
+    <li><a ui-sref="info">info</a></li>
+  </ul>
+</nav>
 <div ui-view></div>
 
+<%= javascript_include_tag 'application' %>
+<script src="/assets/app.module.js"></script>
+<script src="/assets/app.controller.js"></script>
+<script src="/assets/info/info.module.js"></script>
+<script src="/assets/info/info.controller.js"></script>
 </body>
 </html>

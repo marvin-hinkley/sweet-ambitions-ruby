@@ -6,7 +6,7 @@ angular.module('app.info', [])
             $stateProvider.
                 state('info', {
                     url: '/info',
-                    templateUrl: '_info.html',
+                    templateUrl: '/assets/info/_info.html',
                     controller: 'info.controller'
                 });
     }]);
